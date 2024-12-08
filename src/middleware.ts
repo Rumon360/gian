@@ -1,7 +1,7 @@
 import authConfig from "@/auth/config";
 import NextAuth from "next-auth";
 
-const publicRoutes = ["/", "/api/webhook/stripe"];
+const publicRoutes = ["/", "/gallery", "/api/webhook/stripe"];
 const apiAuthPrefix = "/api/auth";
 
 const { auth } = NextAuth(authConfig);
