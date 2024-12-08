@@ -54,7 +54,7 @@ async function CoursePage({ params }: Props) {
             unitIndex={unitIndex}
             chapterIndex={chapterIndex}
           />
-          <Quiz chapter={chapter} />
+          {chapter.questions.length > 0 && <Quiz chapter={chapter} />}
         </div>
       </div>
       <div className="flex justify-center items-center my-8">
