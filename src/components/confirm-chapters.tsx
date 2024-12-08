@@ -50,6 +50,10 @@ function ConfirmChapters({ course }: Props) {
 
   return (
     <div className="mt-10 w-full space-y-5">
+      <p className="text-sm text-muted-foreground">
+        Note: If a chapter generation fails, you can refresh the page and try to
+        generate it again.
+      </p>
       {course.units.map((unit, index) => (
         <div key={unit.id}>
           <h2 className="text-sm uppercase text-secondary-foreground/60">

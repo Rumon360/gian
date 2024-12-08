@@ -22,11 +22,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
         <Providers>
-          <Header />
-          <main className="max-w-screen-xl pt-16 px-4 md:px-6 mx-auto w-full h-full">
-            {children}
-          </main>
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="max-w-screen-xl flex-1 pt-16 px-4 md:px-6 mx-auto w-full h-full">
+              {children}
+            </main>
+            <Footer />
+          </div>
           <Toaster richColors />
         </Providers>
       </body>
